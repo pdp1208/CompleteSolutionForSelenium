@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteNewTest]">
+  <listeners>
+    <listener class-name="utility.Listeners"/>
+  </listeners>
+  <test name="TestParallel(failed)">
+    <classes>
+      <class name="Test.FacebookTest">
+        <methods>
+          <include name="ProjectBaseClass"/>
+          <include name="tearDownDriver"/>
+          <include name="SetupTest"/>
+          <include name="loginToFacebook" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Test.FacebookTest -->
+      <class name="Test.ForgetPasswordTest">
+        <methods>
+          <include name="tearDownDriver"/>
+          <include name="SetupTest"/>
+        </methods>
+      </class> <!-- Test.ForgetPasswordTest -->
+    </classes>
+  </test> <!-- TestParallel(failed) -->
+</suite> <!-- Failed suite [SuiteNewTest] -->

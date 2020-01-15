@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SuiteNewTest" parallel="classes">
+	<listeners>
+		<listener class-name="utility.TestNGReportCustomizationClass" />
+		<listener class-name="utility.Listeners"></listener>
+	</listeners>
+	<test name="TestParallel">
+		<classes>
+			<class name="Test.FacebookTest" />
+			<class name="Test.ForgetPasswordTest" />
+		</classes>
+	</test> <!-- TestParallel -->
+</suite> <!-- SuiteNewTest -->

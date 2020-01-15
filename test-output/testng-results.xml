@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SuiteNewTest" duration-ms="73580" started-at="2020-01-14T23:54:35Z" finished-at="2020-01-14T23:55:49Z">
+    <groups>
+    </groups>
+    <test name="TestParallel" duration-ms="73580" started-at="2020-01-14T23:54:35Z" finished-at="2020-01-14T23:55:49Z">
+      <class name="Test.FacebookTest">
+        <test-method status="PASS" signature="ProjectBaseClass()[pri:0, instance:Test.FacebookTest@4f7d0008]" name="ProjectBaseClass" is-config="true" duration-ms="16" started-at="2020-01-15T05:24:35Z" finished-at="2020-01-15T05:24:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ProjectBaseClass -->
+        <test-method status="PASS" signature="SetupTest()[pri:0, instance:Test.FacebookTest@4f7d0008]" name="SetupTest" is-config="true" duration-ms="33317" started-at="2020-01-15T05:24:36Z" finished-at="2020-01-15T05:25:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupTest -->
+        <test-method status="PASS" signature="loginToFacebook(java.lang.String, java.lang.String)[pri:0, instance:Test.FacebookTest@4f7d0008]" name="loginToFacebook" duration-ms="38176" started-at="2020-01-15T05:25:10Z" data-provider="TestDataFromExcel" finished-at="2020-01-15T05:25:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Happy]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Birthday]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToFacebook -->
+        <test-method status="PASS" signature="tearDownDriver()[pri:0, instance:Test.FacebookTest@4f7d0008]" name="tearDownDriver" is-config="true" duration-ms="847" started-at="2020-01-15T05:25:48Z" finished-at="2020-01-15T05:25:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- Test.FacebookTest -->
+      <class name="Test.ForgetPasswordTest">
+        <test-method status="PASS" signature="SetupTest()[pri:0, instance:Test.ForgetPasswordTest@271053e1]" name="SetupTest" is-config="true" duration-ms="35141" started-at="2020-01-15T05:24:36Z" finished-at="2020-01-15T05:25:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupTest -->
+        <test-method status="PASS" signature="ForgetPassword(java.lang.String)[pri:0, instance:Test.ForgetPasswordTest@271053e1]" name="ForgetPassword" duration-ms="9427" started-at="2020-01-15T05:25:12Z" data-provider="TestDataFromExcel" finished-at="2020-01-15T05:25:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[8.233009425E9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ForgetPassword -->
+        <test-method status="PASS" signature="tearDownDriver()[pri:0, instance:Test.ForgetPasswordTest@271053e1]" name="tearDownDriver" is-config="true" duration-ms="888" started-at="2020-01-15T05:25:21Z" finished-at="2020-01-15T05:25:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownDriver -->
+      </class> <!-- Test.ForgetPasswordTest -->
+    </test> <!-- TestParallel -->
+  </suite> <!-- SuiteNewTest -->
+</testng-results>
