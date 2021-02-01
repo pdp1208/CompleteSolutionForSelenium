@@ -9,9 +9,10 @@ import utility.ByBaseClass;
 
 public class LoginPage extends BaseClass {
 
+	
 	 By userName1= By.id("email");
 	 By passWord1= By.id("pass");
-	 By submit = By.id("loginbutton");
+	 By submit = By.name("login");
 
 	 
 
@@ -30,16 +31,4 @@ public class LoginPage extends BaseClass {
 	public  void ClickLoginButton() {
 		driver.findElement(submit).sendKeys(Keys.RETURN);
 	}
-	
-	
-	/*
-	public static WebElement userName(WebDriver driver) {
-		WebElement userName = driver.findElement(By.id(""));
-		return userName;
-	}
-
-	public static WebElement password(WebDriver driver) {
-		WebElement password = driver.findElement(By.id(""));
-		return password;
-	}*/
 }

@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="none">
+  <listeners>
+    <listener class-name="utility.Listeners"/>
+  </listeners>
+  <test name="Test(failed)" parallel="none">
     <classes>
+      <class name="Test.ForgetPasswordTest">
+        <methods>
+          <include name="tearDownDriver"/>
+          <include name="SetupTest"/>
+          <include name="ForgetPassword" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Test.ForgetPasswordTest -->
       <class name="Test.FacebookTest">
         <methods>
           <include name="ProjectBaseClass"/>
           <include name="tearDownDriver"/>
           <include name="SetupTest"/>
-          <include name="loginToFacebook" invocation-numbers="0"/>
         </methods>
       </class> <!-- Test.FacebookTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

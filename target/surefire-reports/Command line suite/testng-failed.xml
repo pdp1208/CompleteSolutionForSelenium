@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="Test.ForgetPasswordTest">
+        <methods>
+          <include name="ForgetPassword"/>
+        </methods>
+      </class> <!-- Test.ForgetPasswordTest -->
+      <class name="Test.FacebookTest">
+        <methods>
+          <include name="ProjectBaseClass"/>
+          <include name="SetupTest"/>
+          <include name="loginToFacebook"/>
+        </methods>
+      </class> <!-- Test.FacebookTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

@@ -21,12 +21,12 @@ public class Listeners extends BaseClass implements ITestListener{
 		}
 	public void onTestStart(ITestResult result) {
 		// TODO Auto-generated method stub
-		System.out.println("*********Test Started***********");
+		System.out.println("*********Test Started*********** ");
 	}
 	public void onTestSuccess(ITestResult result) {
 		// TODO Auto-generated method stub
 	
-		System.out.println("*********Test Successfully passed***********"+result.getTestName());
+		System.out.println("*********Test Successfully passed*********** "+result.getTestName());
 		
 	}
 	
@@ -56,7 +56,7 @@ public class Listeners extends BaseClass implements ITestListener{
 	}
 	public void onTestSkipped(ITestResult result) {
 		// TODO Auto-generated method stub
-		System.out.println("*********Test Skipped***********"+result.getTestName());
+		System.out.println("*********Test Skipped*********** "+result.getTestName());
 		
 	}
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
@@ -69,6 +69,6 @@ public class Listeners extends BaseClass implements ITestListener{
 	}
 	public void onFinish(ITestContext context) {
 		// TODO Auto-generated method stub
-		System.out.println("*********Test finish***********"+context.getName());
+		System.out.println("*********Test finish*********** "+context.getName());
 	}
 }

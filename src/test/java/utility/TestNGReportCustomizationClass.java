@@ -25,7 +25,7 @@ public class TestNGReportCustomizationClass implements IReporter {
 						+ cntx.getStartDate() + "\n End Date and Time of Execution- " + cntx.getEndDate());
 				IResultMap failedTest = cntx.getFailedTests();
 				Collection<ITestNGMethod> failedMethods = failedTest.getAllMethods();
-				System.out.println("------Failed Test Case-----");
+				System.out.println("    ------Failed Test Case-----   ");
 				for (ITestNGMethod imd : failedMethods) {
 					System.out.println(
 							"Test Case Name- " + imd.getMethodName() + "\n Description- " + imd.getDescription()
@@ -33,7 +33,7 @@ public class TestNGReportCustomizationClass implements IReporter {
 				}
 				IResultMap passedTest = cntx.getPassedTests();
 				Collection<ITestNGMethod> passedMethods = passedTest.getAllMethods();
-				System.out.println("------Passed Test Case-----");
+				System.out.println("    ------Passed Test Case-----     ");
 				for (ITestNGMethod imd1 : passedMethods) {
 					System.out.println(
 							"Test Case Name- " + imd1.getMethodName() + "\n Description- " + imd1.getDescription()

@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class ForgetPasswordPage extends BaseClass{
 
-	By ForgetPassword=By.linkText("Forgotten account?");
+	By ForgetPassword=By.linkText("Forgotten password?");
 	By SearchByPhoneNumberOrEmail = By.name("email");
 	By Submit = By.id("u_0_2");
 	

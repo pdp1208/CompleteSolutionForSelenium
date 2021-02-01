@@ -6,12 +6,18 @@
   </listeners>
   <test name="Test(failed)" parallel="none">
     <classes>
+      <class name="Test.ForgetPasswordTest">
+        <methods>
+          <include name="tearDownDriver"/>
+          <include name="SetupTest"/>
+          <include name="ForgetPassword" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Test.ForgetPasswordTest -->
       <class name="Test.FacebookTest">
         <methods>
           <include name="ProjectBaseClass"/>
           <include name="tearDownDriver"/>
           <include name="SetupTest"/>
-          <include name="login1" invocation-numbers="0"/>
         </methods>
       </class> <!-- Test.FacebookTest -->
     </classes>

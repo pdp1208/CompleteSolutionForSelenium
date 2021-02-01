@@ -58,7 +58,7 @@ public class ByBaseClass extends RemoteWebDriver {
 	@Override
 	public WebElement findElement(By locator) {
 
-		System.out.println("Finding this element using ");
+		System.out.println("Finding this element using ="+ locator);
 		return driver().findElement(locator);
 	}
 

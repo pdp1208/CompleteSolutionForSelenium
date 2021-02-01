@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -59,9 +60,11 @@ public class BaseClass extends ByBaseClass{
 		String browserName = prop.getProperty("browser");
 		String ProjectPath = System.getProperty("user.dir");
 		String url = prop.getProperty("URL");
-		if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", ProjectPath + "\\drivers\\chromedriver79.exe");
-			driver = new ChromeDriver();
+		if (!browserName.equals("chrome")) {
+			ChromeOptions chromeOptions= new ChromeOptions(); 
+			chromeOptions.setBinary("C:\\Users\\RK_pradeeep12081994\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe");
+			System.setProperty("webdriver.chrome.driver", ProjectPath + "\\drivers\\chromedriver.exe");
+			driver = new ChromeDriver(chromeOptions);
 		} else if (browserName.equals("FF")) {
 			System.setProperty("webdriver.gecko.driver", ProjectPath + "\\drivers\\geckodriver.exe");
 			driver = new FirefoxDriver();
@@ -69,10 +72,11 @@ public class BaseClass extends ByBaseClass{
 
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
+		driver.get(url);
 		driver.manage().timeouts().pageLoadTimeout(PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(IMPLICIT_WAIT, TimeUnit.SECONDS);
 		
-		driver.get(url);
+		
 	}
 
 	@AfterMethod

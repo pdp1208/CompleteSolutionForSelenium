@@ -19,7 +19,6 @@ public class FacebookTest extends BaseClass {
 	public Object[][] TestDataFromExcel() throws Exception {
 
 		Object[][] testObjArray = TestDataFromExcel.ExcelFetchData("TestData", "Facebook", "FaceBookLogin");
-
 		return (testObjArray);
 
 	}
@@ -31,6 +30,5 @@ public class FacebookTest extends BaseClass {
 		obj.setPassword(Password);
 		Thread.sleep(4000);
 		obj.ClickLoginButton();
-
 	}
 }
